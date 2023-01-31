@@ -1,7 +1,7 @@
 # integrated group project
 from pathlib import Path
 import csv
-fp = Path.cwd()/"Cash on Hand.csv"
+
 
 fp = Path.cwd()/"CSV_reports"/"Cash on Hand.csv"
 with fp.open(mode="r", encoding="UTF-8", newline="") as file:
