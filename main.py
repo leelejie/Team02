@@ -16,3 +16,4 @@ file_path = Path.cwd/"summary_report.txt"
 
 with file_path.open(mode = "w") as file:
     file.write(output)
+
