@@ -42,7 +42,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         
         #if statement for when there is no output values meaning all the current values are higher than the previous value
         if noprofitdeficit == True:
-            
+
             #prints the output desired if the if statement occurs
             print("[NET PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
     
