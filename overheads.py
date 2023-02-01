@@ -34,7 +34,7 @@ with fp.open(mode = "r",encoding = "UTF-8", newline="") as file:
             if float(sublist[1])==largest_value:
                 highestoverhead_category=sublist[0]
                 #statement returned as output
-                return (f"[HIGHEST OVERHEADS] {highestoverhead_category}: {largest_value}%")
+                return (f"[HIGHEST OVERHEADS] {highestoverhead_category.upper()}: {largest_value}%")
     print(overhead())
 
         
