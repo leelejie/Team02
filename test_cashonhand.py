@@ -22,5 +22,6 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         day_list.append(line[0])
         dayandcoh_list.append(line)
 
+   
         
     
