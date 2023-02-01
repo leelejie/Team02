@@ -10,15 +10,15 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     
     def cash_loss():
         """
-        this function identifies the days where the previous day is higher than the current day
+        This function identifies the days where the previous day is higher than the current day
         and computes the difference 
         """
         prev_cash = 0
         count = 0
         #use of loops to go through every item in the list
+       
         
-        
-        for num in reader:
+        for num in reader: 
         #if statement so that if the previous day is higher than the current day in the statement it will commit the code below 
             if int(prev_cash)>int(num[1]) and count>0:
                 
@@ -30,6 +30,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
 
             prev_cash = num[1]
             count+=1
+            
 
             #if the previous day is lower than the current day it will commit the code below
         else:
