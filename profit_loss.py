@@ -12,10 +12,10 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         count = 0
         for row in reader:
             if int(prevprofit) > int(row[4]) and count>0:
-                diff = abs(int(row[4]) - int(prevprofit))
-                return f"[PROFIT DEFICIT] DAY: {row[0]}, AMOUNT: {diff}"
+                diff = int(prevprofit) - int(row[4])
+                return(f"[PROFIT DEFICIT] DAY: {row[0]}, AMOUNT: {diff}")
             prevprofit = row[4]
             count+=1
         else:
-            return f"[NET PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY"
-    print(profit_loss())
+            return(f"[NET PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+    print(profit_loss())    
