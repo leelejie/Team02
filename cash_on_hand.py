@@ -26,7 +26,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
                 diff = int(prev_cash) - int(num[1])
 
                 #return back the day and the difference of the cash deficit
-                return f"[CASH DEFICIT] DAY: {num[0]}, AMOUNT: {diff_sg}"
+                return f"[CASH DEFICIT] DAY: {num[0]}, AMOUNT: {diff}"
 
             prev_cash = num[1]
             count+=1
