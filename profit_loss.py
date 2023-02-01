@@ -7,6 +7,9 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     
     def profit_loss():
         """
+        - This function computes the difference in net profit column
+        if the net profit on the current day is lower than the previous day
+        - 
         """
         prevprofit = 0
         count = 0
