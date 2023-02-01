@@ -20,13 +20,13 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
             coh_dayandvalue.append(value)
             coh_value.append(value[1])
         length=len(coh_value)
-
+        
         while index<length:
             if float(coh_value[index-1])>float(coh_value[index]):
-                
-                diff = coh_value[index-1] - coh_value[index]
+                print(coh_value[index])
+                # diff = coh_value[index-1] - coh_value[index]
 
-                return f"[CASH Deficit] DAY: "
+                # return f"[CASH Deficit] DAY: "
 
 
 
