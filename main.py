@@ -10,7 +10,10 @@ def main():
 
 output = main()  
 from pathlib import Path
-
+"""
+This Function identifies as an iterator for all searhces of the files and folders in the directory 
+consisting of cash on hand, overheads and profit loss. 
+"""
 # create a path object for contacts.txt
 file_path = Path.cwd/"summary_report.txt"
 

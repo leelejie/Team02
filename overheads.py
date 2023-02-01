@@ -8,7 +8,7 @@ with fp.open(mode = "r",encoding = "UTF-8", newline="") as file:
 
     def overhead():
         """
-        This function returns the highest overhead category
+        This function returns the highest overhead category. 
         """
         overhead_value=[]
         overhead_category=[]
