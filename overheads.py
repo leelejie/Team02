@@ -34,6 +34,7 @@ with fp.open(mode = "r",encoding = "UTF-8", newline="") as file:
             if float(sublist[1])==largest_value:
                 highestoverhead_category=sublist[0]
                 #statement returned as output
+                #use .upper() function to convertletters in string to uppercase
                 return (f"[HIGHEST OVERHEADS] {highestoverhead_category.upper()}: {largest_value}%")
     print(overhead())
 
