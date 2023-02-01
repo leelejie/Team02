@@ -33,6 +33,20 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
             index+=1           
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+            return f"[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY"
+
     print(cash_loss())
 
 
