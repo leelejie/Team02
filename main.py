@@ -5,18 +5,19 @@ import cash_on_hand,overheads, profit_loss
 #to call the different functions into the main function 
 def main():
 
-    cash_on_hand.coh_function()
-    overheads.overhead_function()
-    profit_loss.profitloss_function()
+        cash_on_hand.coh_function()
+        overheads.overhead_function()
+        profit_loss.profitloss_function()
 
-output=print(main())  
+output=main()
 from pathlib import Path
 
 #This Function identifies as an iterator for all searhces of the files and folders in the directory 
 #consisting of cash on hand, overheads and profit loss. 
 
 # create a path object for contacts.txt
-file_path= Path(r"C:\Team02\summary_report.txt") 
+file_path= Path(r"C:\Team02\summary_report.txt")  
+print(file_path.exists())
 #opening file with 'with' and 'open'
 #w passed to the mode parameter so i can write a text file
 #allows it to write the function output into a text file
