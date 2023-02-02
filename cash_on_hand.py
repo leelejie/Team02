@@ -1,11 +1,15 @@
+#to import the csv file into the file
 from pathlib import Path
 import csv
 
+#creates a file path towards the csv file 
 
 fp = Path.cwd()/"CSV_reports"/"Cash on Hand.csv"
 with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     reader = csv.reader(file)
+    #skip header
     next(reader)
+    #function to calculate the difference in the cash deficit days 
     def coh_function():
         
         """
