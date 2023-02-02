@@ -4,14 +4,17 @@ import csv
 fp = Path.cwd()/"CSV_reports"/"Profit and Loss.csv"
 with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     reader = csv.reader(file)
-    next(reader) #skip header
+    #skip header
+    next(reader) 
     
     def profit_loss():
+        #docstrings to describe function
         """
         - This function computes the difference in the net profit column
-        if the net profit on the current day is lower than the previous day
-        - Otherwise it returns net profit surplus if all the net profit for the
+        if the net profit on the current day is lower than the previous day. 
+        Otherwise it returns net profit surplus if all the net profit for the
         current day is higher than the previous day
+        - There are no parameters required
         """
         #creating prevprofit variable to store the previous net profit value
         #creating count variable to track the different rows in the data
@@ -33,7 +36,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
                 diff = int(prevprofit) - int(row[4])
 
                 #prints the output desired if the if statement occurs
-                print(f"[PROFIT DEFICIT] DAY: {row[0]}, AMOUNT: USD{diff}")
+                return f"[PROFIT DEFICIT] DAY: {float(row[0])}, AMOUNT: USD{diff}"
             
             #reassign a new value to the variable to store the updated previous data
             #count to track the row number in the dataset so as to skip the first row 
@@ -44,7 +47,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         if noprofitdeficit == True:
 
             #prints the output desired if the if statement occurs
-            print("[NET PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+                return f"[NET PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY"
     
     #executing the function
-    profit_loss()
+    print(profit_loss())
