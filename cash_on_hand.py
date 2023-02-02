@@ -61,6 +61,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
                 #Assigns all the values in the lists into variables to display in the statement    
                 d_day=listdeficit_day[count]
                 d_dif=listdeficit_diff[count]
+                #f-string to return back the statement with the days with cash deficit and the difference between the two days 
                 print(f"[CASH DEFICIT] DAY: {float(d_day)}, AMOUNT: USD{d_dif}")
                      
         #if theres no deficit days in the list, itll commit the code below
