@@ -2,6 +2,7 @@ from pathlib import Path
 import csv
 #creating a file to csv file
 fp = Path.cwd()/"CSV_reports"/"Profit and Loss.csv"
+#read csv file to append values/ access the data
 with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     reader = csv.reader(file)
     #skip header
@@ -47,7 +48,6 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         if noprofitdeficit == True:
 
             #prints the output desired if the if statement occurs
-            print(f"[NET PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
-    
-    #executing the function
-    profit_loss()
+            print("[PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+
+   
