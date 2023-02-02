@@ -11,6 +11,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         """
         This function identifies the days where cash on hand for the previous day is higher than the current day
         and computes the difference between them
+        No parameters required
         """
         prev_cash = 0
         count = 0
@@ -20,6 +21,10 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         for num in reader:
 
             #The code will execute when the below condition is met which is that the previous day has higher cash than current day
+            if nocashdeficit == True:            
+                #prints the output if statement occurs
+                print("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+
             if int(prev_cash) > int(num[1]) and count>0:
 
                 #assigning nocashdeficit to be false as a result of if statement
@@ -37,9 +42,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
             count+=1
         
             #if statement for when the current values are higher than the previous value and will execute the code below
-        if nocashdeficit == True:            
-                #prints the output if statement occurs
-            print("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+       
     
     #executes the function
     cash_loss()
