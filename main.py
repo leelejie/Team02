@@ -4,8 +4,8 @@ import cash_on_hand,overheads, profit_loss
 #to call the different functions into the main function 
 def main():
 
-    cash_on_hand.cash_loss()
-    overheads.__annotations__
+    cash_on_hand.coh_function()
+    overheads.overhead()
     profit_loss.profit_loss()
 
     return 
