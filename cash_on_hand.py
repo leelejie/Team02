@@ -13,8 +13,9 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     def coh_function():
         #docstrings to describe function
         """
-        This function identifies the days where the previous day is higher than the current day
+        - This function identifies the days where the previous day is higher than the current day
         and computes the difference 
+        - No parameters is required
         """
         #creates empty lists for the variables below
         coh_list=[]
@@ -23,11 +24,19 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         listdeficit_day=[]
         listdeficit_diff=[]
         
+        #for loop to go through every data in the list
+        for values in reader:
+            #to append the the values from the csv files into the empty lists
+
+            #this appends all the cash on hand values to a list
+            coh_list.append(values[1])
+
+            #this appends all the days to the list
+            day_list.append(values[0])
             
-            
-        #this appends all the days and cash on hand to a nested list with 
-        #respective [day,cash on hand] as a sublist
-        coh_day_list.append(values)
+            #this appends all the days and cash on hand to a nested list with 
+            #respective [day,cash on hand] as a sublist
+            coh_day_list.append(values)
 
         #to find how many data sets there are(range) and assign it to length
         length=len(day_list)
@@ -85,6 +94,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
             #prints this statement when theres no cash deficit days
             print(f"[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
  
+    coh_function()
 
         
         
