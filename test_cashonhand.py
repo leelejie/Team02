@@ -17,14 +17,16 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     
         coh_value=[]
         coh_days=[]
-        dayofdeficit=[]
+        
         index=1
         for value in reader:
             coh_days.append(value[0])
             coh_value.append(value[1])
         length=len(coh_value)
        
-       
+        for num in coh_value:
+            if num[0]<num[1]:
+               print("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE")
 
         while index<length:
             if float(coh_value[index-1])>float(coh_value[index]):
@@ -32,17 +34,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
                 diff = int(coh_value[index-1]) - int(coh_value[index])
             
                 
-                print(f" [CASH DEFICIT] DAYS: {coh_days[index]}, AMOUNT: USD{diff}")
-
-        for num in coh_value:
-            if num[0]<num[1]:
-               print("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE"  )
- 
-                
-
-
-                             
-               
+                print(f" [CASH DEFICIT] DAYS: {coh_days[index]}, AMOUNT: USD{diff}")              
             index+=1
         # if 
     
