@@ -11,6 +11,11 @@ def main():
         profit_loss.profitloss_function()
 
 output=main()
+<<<<<<< HEAD
+=======
+        
+from pathlib import Path
+>>>>>>> b3bbd6c05d316a30b0cdd8b979b226d3e32e0c0e
 
 #This Function identifies as an iterator for all searhces of the files and folders in the directory 
 #consisting of cash on hand, overheads and profit loss. 
@@ -23,4 +28,10 @@ file_path= Path(r"C:\PFB\summary_report.txt")
 #allows it to write the function output into a text file
 with file_path.open(mode = "w") as file:
     #write() method to write data into plain text file
+<<<<<<< HEAD
     file.write(f"{output}")
+=======
+        file.write(f"{output}")
+file.close(file_path)
+
+>>>>>>> b3bbd6c05d316a30b0cdd8b979b226d3e32e0c0e

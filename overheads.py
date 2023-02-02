@@ -63,6 +63,6 @@ with fp.open(mode = "r",encoding = "UTF-8", newline="") as file:
 
         #use return to return statement 
         #fstring and braces{} used to get the data assigned to the variables 
-        return f"[HIGHEST OVERHEADS] {highest_overheadcategory.upper()}: {largest_value}%"
+        print( f"[HIGHEST OVERHEADS] {highest_overheadcategory.upper()}: {largest_value}%")
     
     print(overhead_function())
