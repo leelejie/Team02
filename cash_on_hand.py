@@ -9,8 +9,8 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     
     def cash_loss():
         """
-        This function identifies the days where the previous day is higher than the current day
-        and computes the difference 
+        This function identifies the days where the cash on hand for the 
+        previous day is higher than the current day and computes the difference 
         """
         prev_cash = 0
         count = 0
@@ -37,7 +37,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
             count+=1
         
             #if statement for when the current values are higher than the previous value and will execute the code below
-        if nocashdeficit == True:            
+        if nocashdeficit == False:            
             #prints the output if statement occurs
             print("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
     
