@@ -94,8 +94,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
             #prints this statement when theres no cash deficit days
             print(f"[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
  
-    #to call the function
-    coh_function()
+
         
         
 
