@@ -10,6 +10,7 @@ def main():
         profit_loss.profitloss_function()
 
 output=main()
+        
 from pathlib import Path
 
 #This Function identifies as an iterator for all searhces of the files and folders in the directory 
@@ -23,5 +24,6 @@ print(file_path.exists())
 #allows it to write the function output into a text file
 with file_path.open(mode = "w") as file:
     #write() method to write data into plain text file
-    file.write(f"{output}")
+        file.write(f"{output}")
+file.close(file_path)
 
