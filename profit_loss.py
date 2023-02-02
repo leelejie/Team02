@@ -2,6 +2,7 @@ from pathlib import Path
 import csv
 #creating a file to csv file
 fp = Path.cwd()/"CSV_reports"/"Profit and Loss.csv"
+#read csv file to append values/ access the data
 with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     reader = csv.reader(file)
     #skip header
