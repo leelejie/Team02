@@ -3,7 +3,7 @@ from pathlib import Path
 import csv
 
 #creates a file path towards the csv file 
-
+#read csv file to access and append the data
 fp = Path.cwd()/"CSV_reports"/"Cash on Hand.csv"
 with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     reader = csv.reader(file)
