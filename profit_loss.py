@@ -8,7 +8,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     #skip header
     next(reader) 
     
-    def profit_loss():
+    def profitloss_function():
         #docstrings to describe function
         """
         - This function computes the difference in the net profit column
