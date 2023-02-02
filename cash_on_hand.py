@@ -39,7 +39,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         
             #if statement for when the current values are higher than the previous value and will execute the code below
         if nocashdeficit == True:            
-            #prints the output if statement occurs
+                #prints the output if statement occurs
             print("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
     
     #executes the function
