@@ -50,4 +50,4 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
             #prints the output desired if the if statement occurs
             print("[PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
 
-    profitloss_function()
+    print(profitloss_function())
